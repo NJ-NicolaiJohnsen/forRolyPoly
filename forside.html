@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>DMF Racing Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="tablet-styles.css">
+		<link rel="stylesheet" href="1025-1469-styles.css">
+		<link rel="stylesheet" href="4k-styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,500,600,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet"> 
+	</head>
+	<body>
+		<div id='myModal'>
+			<span class='close' onclick='closeModal()'>&times;</span>
+			<div class='modal-content'>
+				<span class='close-modal' onclick='closeModal()'>&times;</span>
+				<div class='mySlides slide-one'>
+					<img src='../pictures/ralph-blvmberg--EXF9shcTO0-unsplash@2x.png'>
+				</div>
+				<div class='mySlides slide-two'>
+					<img src='../pictures/henrik-hjortshoj-7DWnTxE-XY0-unsplash-1@2x.png'>
+				</div>
+				<div class='mySlides slide-three'>
+					<img src='../pictures/davids-kokainis-rJzPRuCjLRk-unsplash@2x.png'>
+				</div>
+				<div class='mySlides slide-four'>
+					<img src='../pictures/background@2x.png'>
+				</div>
+				<div class='mySlides slide-five'>
+					<img src='../pictures/background-1@2x.png'>
+				</div>
+				<a class='prev' onclick="plusSlides(-1)">&#10094;</a>
+				<a class='next' onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+		<div id='page-container' class='page'>
+			<nav class='top-navigation'>
+				<img id='dmf-racing-logo' onclick='winScrollTop()' class='dmf-racing-logo' src='../pictures/Logo-top.svg'>
+				<div class='navigation-link'>
+					<a id='dmf-racing-link' onclick='winScrollOne()' >DMF Racing</a>
+					<a onclick='winScrollTwo()'>Nyheder</a>
+					<a onclick='winScrollThree()'>Teamet</a>
+					<a onclick='winScrollFour()'>Om bilen</a>
+				</div>
+			</nav>
+			<header class='header-cover-image'>
+				<h1 class='header-one-span'>Team DMF Racing ser frem mod den nye sæson</h1>
+				<a href='#' class='laes-mere-btn'>Læs mere</a>
+				<img class='streger-header' src='../pictures/streger.svg'>
+			</header>
+			<time class='count-down-container'>
+				<h2 class='naeste-loeb'>Næste løb</h2>
+				<div class='calender-container'>
+					<a class='calender-link' href='calendar'>Åben kalenderen</a>
+				</div>
+				<div class='count-down'>
+					<div class='counter'>
+						<p id='days' class='counter-number'></p>
+						<p class='counter-text'>Dage</p>
+					</div>
+					<div class='counter'>
+						<p id='hours' class='counter-number'></p>
+						<p class='counter-text'>Timer</p>
+					</div>
+					<div class='counter'>
+						<p id='minutes' class='counter-number'></p>
+						<p class='counter-text'>Min.</p>
+					</div>
+					<div class='counter'>
+						<p id='seconds' class='counter-number'></p>
+						<p class='counter-text'>Sek.</p>
+					</div>
+				</div>
+			</time>
+				<div class='gallery-container' onclick='openModal()'>
+					<p class='gallery-text'>Galleri</p>
+					 <img class='gallery-content gallery-image-one' src='../pictures/daniel-minarik-6CSSkz0fx0E-unsplash@2x.png'>
+					 <img class='gallery-content gallery-image-two' src='../pictures/david-latorre-romero-kcBNrm_KLno-unsplash@2x.png'>
+					 <img class='gallery-content gallery-image-three' src='../pictures/mathieu-sautif-oiwLqRe-07Y-unsplash@2x.png'>
+					 <img class='gallery-content gallery-image-four' src='../pictures/henrik-hjortshoj-7DWnTxE-XY0-unsplash@2x.png'>
+					 <img class='gallery-content gallery-image-five' src='../pictures/matthew-dockery-s99-JP8P3Hg-unsplash-1@2x.png'>
+				</div>
+			<div class='sponsors-container'>
+				<span class='sponsors-text'>Tak til vores sponsere</span>
+				<div class='sponsors'>
+					<img class='sponsors-one' src='../pictures/Sponsere-1-new.png'>
+					<img class='sponsors-two' src='../pictures/Sponsere-2-new.png'>
+					<img class='sponsors-uncut' src='../pictures/Sponsore@2x.png'>
+				</div>
+			</div>
+			<main id='dmf-racing' class='main-content-container'>
+				<article class='main-content'>
+					<h2>DMF Racing</h2>
+					<section class='manchet'>Lorem ipsum dolor sit ameconse tetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt labore et dolore magna aliquyam erat, sed diam voluptua.</section>
+					<div class='main-text-div'>
+						<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+						<p>At vero eos et accusam et justo duo dolores et ea rebum.<br> Stet clita kasd gubergren, no sea takimata sanctus est.</p>
+					</div>
+					<span class='kontakt-btn-container'>
+						<a href='tel:+4566666666' class='kontakt-btn'>Kontakt os</a>
+					</span>
+					<img class='streger-main' src='../pictures/streger.svg'>
+				</article>
+			</main>
+			<aside id='aside-container'>
+				<div class='aside-buttons'>
+					<div id='aside-btn-back'>
+						<img src='../pictures/daniel-minarik-6CSSkz0fx0E-unsplash-1.svg'>
+					</div>
+					<div id='aside-btn-next'>
+						<img src='../pictures/daniel-minarik-6CSSkz0fx0E-unsplash-1.svg'>
+					</div>
+				</div>
+				<div class='article-link-container article-one'>
+					<img class='article-image image-one' src='../pictures/matthew-dockery-s99-JP8P3Hg-unsplash@2x.png'>
+					<div class='article-link-text-container'>
+						<h1>Team DMF ser frem mod den nye sæson</h1>
+						<a href='#' class='article-btn'>Læs mere</a>
+					</div>
+				</div>
+				<div class='article-link-container article-two'>
+					<img class='article-image' src='../pictures/chris-liverani-HUJDz6CJEaM-unsplash@2x.png'>
+					<div class='article-link-text-container'>
+						<h1>Team DMF ser frem mod den nye sæson</h1>
+						<a href='#' class='article-btn'>Læs mere</a>
+					</div>
+				</div>
+				<div class='article-link-container article-three'>
+					<img class='article-image image-three' src='../pictures/ralph-blvmberg--EXF9shcTO0-unsplash@2x.png'>
+					<div class='article-link-text-container'>
+						<h1>Team DMF ser frem mod den nye sæson</h1>
+						<a href='#' class='article-btn'>Læs mere</a>
+					</div>
+				</div>
+			</aside>
+			<article id='teamet' class='teamet-container'>
+				<img class='streger-teamet' src='../pictures/streger.svg'>
+				<div class='teamet-rasmus'>
+					<h2>Teamet</h2>
+					<img class='rasmus-image' src='../pictures/davids-kokainis-rJzPRuCjLRk-unsplash@2x.png'>
+					<span class='rasmus-name-tag'>Rasmus Sandvej Juulsen</span>
+					
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+					
+					<ul class='achievement-list rasmus-list'>
+						<li>2. plads eos et accusam</li>
+						<li>5. plads kasd gubergren</li>
+						<li>No sea takimata sanctus est</li>
+						<li>Dolor sit amet.</li>
+					</ul>
+					
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+					
+					<a href="mailto:EMAILADDRESS" class='send-email'>Send Rasmus en mail</a>
+				</div>
+				<div class='teamet-tage'>
+					<img class='tage-image' src='../pictures/henrik-hjortshoj-7DWnTxE-XY0-unsplash-1@2x.png'>
+					<span class='rasmus-name-tag'>Tage Sandvej Nielsen</span>
+					
+					<p>orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna my eirmod tempor invidunt ut labaliquyam erat, sed diam voluptua.</p>
+					
+					<ul class='achievement-list tage-list'>
+						<li>• 1. plads kasd gubergren </li>
+						<li>• Sanctus taki mata est</li>
+						
+					</ul>
+					
+					<p>At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren sanctus.</p>
+					
+					<a href="mailto:EMAILADDRESS" class='send-email tage-email'>Send Tage en mail</a>
+				</div>
+			</article>
+			<div class='sponsors-container-second'>
+				<div class='sponsors-second'>
+					<img src='../pictures/Michelin.svg'>
+					<img src='../pictures/Adidas.svg'>
+					<img src='../pictures/Mobil1.svg'>
+				</div>
+			</div>
+			<div id='om-bilen' class='car-details-container'>
+				<div class='om-bilen-container'>
+					<p class='om-bilen'>Om bilen</p>
+					<h2>Brumos Porsche</h2>
+					<p class='car-details-text'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+					<div class='car-details-list'>
+						<ul class='car-details-list-one'>
+							<li>HK:</li>
+							<li>0-100:</li>
+							<li>Motor:</li>
+							<li>Årgang</li>
+							<li>Topfart:</li>
+						</ul>
+						<ul class='car-details-list-two'>
+							<li>290</li>
+							<li>5,5 sek</li>
+							<li>XXXXXX</li>
+							<li>1864</li>
+							<li>240 km/t</li>
+						</ul>
+					</div>
+				</div>
+				<img class='car-details-streger' src='../pictures/streger.svg'>
+				<div id='car-gallery-container' class='car-image-gallery'>
+					<div id='car-gallery-images'>
+						
+						<img id='car-one' src='../pictures/Bil2@2x.png'>
+						<img id='car-two' src='../pictures/daniel-minarik-6CSSkz0fx0E-unsplash-5@2x.png'>
+						<img id='car-three' src='../pictures/daniel-minarik-6CSSkz0fx0E-unsplash-4@2x.png'>
+						<img id='car-four' src='../pictures/Bil2@2x.png'>
+						<img id='car-five' src='../pictures/daniel-minarik-6CSSkz0fx0E-unsplash-5@2x.png'>
+						<img id='car-six' src='../pictures/daniel-minarik-6CSSkz0fx0E-unsplash-4@2x.png'>
+					</div>
+					
+					<img id='red-stripe' src='../pictures/Bil2-1.svg'/>
+					
+					<button id='car-button' class='next-image-btn' onclick='changeImage()'>
+						<img src='../pictures/arrow-white.svg'>
+						<img src='../pictures/arrow-white.svg'>
+					</button>
+				</div>
+				<img class='top-logo-background' src='../pictures/Logo-top.svg'>
+			</div>
+			
+			<footer class='footer'>
+				<img class='streger-footer' src='../pictures/streger.svg'>
+				<p class='kontakt-footer'>Kontakt os på 00 00 00 00 <br>eller på <a href='mailto:info@dmf-racing.dk'>info@dmf-racing.dk</a></p>
+				<img class='dmf-logo-footer' src='../pictures/DanskMotorLogo.svg'>
+				<p class='text-footer'>Dansk Motor Finans er lorem ipsum dolor sit ametcon setetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua.</p>
+				
+			</footer>
+		</div>
+		<script src='forside.js'></script>
+	</body>
+</html>
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. • 2. plads eos et accusam • 5. plads kasd gubergren • No sea takimata sanctus est • Dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod. At vero eos et accusam et justo duo dolores et ea rebum.
