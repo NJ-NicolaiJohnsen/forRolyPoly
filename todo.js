@@ -1,12 +1,9 @@
 
 const listDiv = document.querySelector('.list-items-div');
 const inputText = document.querySelector('#foo');
-inputText.value = '';
 const form = document.querySelector('form');
 const submit = document.getElementById('foo-submit');
-let deleteItem;
-let item;
-let itemComplete;
+
 
 
 
@@ -17,32 +14,70 @@ function createListItem(){
 
     item = document.createElement('LI')
     item.innerHTML = items;
-    listDiv.appendChild(item);
+
+
 
     if (inputText.value === ""){
-        item.parentNode.removeChild(item);
+        return;
+    } else {
+        listDiv.appendChild(item);
     }
     
-}
+    inputText.value === "";
+    
 
-document.addEventListener('keyup', event => {
-    if (event.keyCode === 13){
-        createListItem();
-        form.reset();
+    let deleteItem = document.createElement('p');
+    let deleteItemTxt = document.createTextNode("Delete");
+    deleteItem.className = "delete";
+    deleteItem.appendChild(deleteItemTxt);
+    item.appendChild(deleteItem);
+
+    let close = document.querySelectorAll('.delete');
+
+    for (i=0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
     }
-})
+
+    let completed = document.createElement('span')
+    let completedTxt = document.createTextNode("Completed");
+    completed.appendChild(completedTxt);
+    completed.className = "completed";
+    item.appendChild(completed);
+
+    let isComplete = document.querySelectorAll('.completed');
+    for (i=0; i < isComplete.length; i++){
+        let completedClassName = 'isCompleted';
+
+        isComplete[i].onclick = function(){
+            let parent = this.parentElement;
+            let completedEl = parent.querySelector('.isCompleted');
+            if(completedEl) {
+                completedEl.remove();
+            } else {
+                let completeTask = document.createElement('div');
+                completeTask.classList.add("isCompleted");
+                this.parentElement.appendChild(completeTask)
+            }
+        }  
+    }
+
+
+
+    console.log(item);
+}
 
 form.addEventListener('submit', function(event){
     event.preventDefault();
+
     createListItem();
     form.reset();
 })
 
-let listElements = document.querySelectorAll("LI");
-for (i=0; i<listElements.length; i++){
-    deleteItem = document.createElement('p');
-    let deleteItemTxt = document.createTextNode("Delete");
-    deleteItem.classList.add('delete');
-    deleteItem.appendChild(deleteItemTxt);
-    listElements[i].appendChild(deleteItem);
-}
+document.addEventListener('keyup', event =>{
+    if (event.keyCode === 13){
+        createListItem();
+    }
+})
