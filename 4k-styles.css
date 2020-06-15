@@ -1,0 +1,1117 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+	font-family: 'montserrat', serif;
+}
+
+h1, h2, h3 {
+		font-family: 'montserrat', serif;
+	}
+
+p {
+		font-family: 'montserrat', serif;
+		font-weight: 400;
+	}
+
+
+@media only screen and (min-width: 1921px) {
+	.sponsors-one,
+	.sponsors-two {
+		display: none;
+	}
+	
+	
+	.page {
+		display: grid;
+		grid-template-rows: 103px 967px 160px 557px 484px 1016px 134px 1019px 254px;
+		
+	}
+	
+	.top-navigation {
+		background: linear-gradient(180deg, #0D3257 0%, #041424 100%) 0% 0%;
+		z-index: 99;
+		box-shadow: 0px 15px 30px #03111F59;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		position: sticky;
+		top: 0;
+	}
+	
+	.top-navigation::after {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-size: 120%;
+		z-index: -1;
+		mix-blend-mode: overlay;
+		background-image: url('../pictures/baggrundemoenster.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		
+		opacity: 0.13;
+	}
+	
+	.dmf-racing-logo {
+		margin-left: 25%;
+		width: 161px;
+		cursor: pointer;
+	}
+	
+	.navigation-link {
+		color: #fff;
+		font-size: 20px;
+		font-weight: 500;
+		font-style: italic;
+		margin-right: 25%;
+	}
+	
+	.navigation-link a {
+		padding: 40px 27.5px 40px 27.5px;
+		cursor: pointer;
+	}
+	
+	.navigation-link a:hover {
+		background: #ffffff11;
+		box-shadow: inset 0px -5px 0px 0px #db001e;
+	}
+	
+	
+	.header-cover-image {
+		mix-blend-mode: overlay;
+		background: url(../pictures/background-1@2x.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 76%;
+		background-size: cover;
+		mix-blend-mode: multiply;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+	
+	.header-cover-image::before {
+		content: '';
+		height: 472px;
+		position: absolute;
+		top: 596px;
+		left: 0;
+		right: 0;
+		background: transparent linear-gradient(0deg, #092541 0%, #FFFFFFff 100%) 0% 0% no-repeat padding-box;
+		mix-blend-mode: multiply;
+		z-index: -1;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		
+	}
+	
+	.header-cover-image::after {
+		content: '';
+		position: absolute;
+		top: 103px;
+		left: 0;
+		right: 0;
+		height: 967px;
+		background: transparent linear-gradient(180deg, #0D3257 0%, #092541aa 100%) 0% 0% no-repeat padding-box;
+		z-index: -1;
+		opacity: 0.6;
+		mix-blend-mode: multiply;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+	
+	.streger-header {
+		position: absolute;
+		top: 101px;
+		right: 24.65%;
+		height: 967px;
+		z-index: 2;
+	}
+	
+	.header-one-span {
+		display: block;
+		margin: 196px 0px 0px 25%;
+		width: 727px;
+		font-size: 50px;
+		color: #ffffff;
+		font-style: italic;
+		z-index: 3;
+	}
+	
+	.laes-mere-btn {
+		display: inline-block;
+		padding: 14px 30px;
+		background: linear-gradient(#ef493c, #db001e);
+		transform: skewX(-7deg);
+		color: #fff;
+		font-style: italic;
+		font-weight: 500;
+		margin-left: 25%;
+		margin-top: 33px;
+		font-size: 16px;
+		z-index: 2;
+	}
+	
+	.laes-mere-btn:hover {
+		background: linear-gradient(#ef493c, #aa0000);
+	}
+	
+	.count-down-container {
+		
+		position: absolute;
+		left: -100px;
+		top: 805px;
+		
+		width: 45%;
+		height: 294px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 2fr 3fr;
+		background: transparent linear-gradient(1deg, #005DAC 0%, #23B5EE 100%) 0% 0% no-repeat padding-box;
+		transform: skewX(-7deg);
+	}
+	
+	.naeste-loeb {
+		grid-row-start: 1;
+		color: #fff;
+		font-size: 3.38em;
+		font-weight: 800;
+		font-style: italic;
+		position: absolute;
+		right: calc(10% + 352px);
+		bottom: 13rem;
+	}
+	
+	.calender-container {
+		grid-row-start: 1;
+		color: #fff;
+		text-align: right;
+		bottom: 13em;
+		display: flex;
+		position: absolute;
+		right: 10%;
+		align-items: flex-end;
+	}
+	
+	.calender-link {
+		font-style: italic;
+		font-weight: 500;
+		line-height: 1.9;
+		font-size: 1.125em
+		
+		
+	}
+	
+	.count-down {
+		grid-row-start: 2;
+		color: #fff;
+		display: flex;
+		justify-content: flex-end;
+		position: absolute;
+		right: 10%;
+	}
+	
+	.counter {
+		height: 8.45em;
+		width: 9.51em;
+		background: transparent linear-gradient(0deg, #0D3257 0%, #092541 100%) 0% 0% no-repeat padding-box;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-right: 5px;
+	}
+	
+	.counter-number {
+		font-size: 50px;
+		font-family: 'Zilla Slab', serif;
+		font-style: italic;
+		font-weight: 400;
+		line-height: 1;
+	}
+	
+	.counter-text {
+		color: #009cdc;
+		padding: 4px 0px 1px 0px;
+	}
+	
+	.gallery-container {
+		
+		position: absolute;
+		top: 805px;
+		right: 0;
+		width: 1495px;
+		
+		
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		white-space: no-wrap;
+	}
+	
+	.gallery-container::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 17.6%;
+		right: 0;
+		height: 293px;
+		width: 1495px;
+		transform: skewX(-7deg);
+		display: inline-block;
+		background: transparent linear-gradient(0deg, #092541 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+		mix-blend-mode: overlay;
+		z-index: 5;
+		overflow-x: hidden;
+		
+	}
+	
+	.gallery-container:hover::after {
+		cursor: pointer; 
+	}
+	
+	.gallery-text {
+		font-size: 32px;
+		font-weight: 800;
+		font-style: italic;
+		color: #fff;
+		padding: 127px 100px 127px 100px;
+		
+		transform: skewX(-7deg);
+		background: linear-gradient(#0c5292, #112232);
+		display: inline-block;
+		position: relative;
+		left: 17.6%;
+	}
+	
+	.gallery-content {
+		height: 294px;
+	}
+	
+	.gallery-image-one {
+		position: relative;
+		left: 16%;
+	}
+	
+	.gallery-image-two {
+		position: relative;
+		left: 12%;
+	}
+	
+	.gallery-image-three {
+		position: relative;
+		left: 8%;
+	}
+	
+	.gallery-image-four {
+		position: relative;
+		left: 4%;
+	}
+	
+	.gallery-image-five {
+		position: relative;
+		left: 0%;
+	}
+	
+	.sponsors-container {
+		grid-row-start: 3;
+		grid-row-end: 4;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	
+	.sponsors-text {
+		font-size: 22px;
+		font-style: italic;
+		font-weight: 700;
+		font-family: 'montserrat', serif;
+		color: #bcc9d1;
+		margin-right: 200px;
+	}
+	
+	.sponsors {
+		max-width: 1160px;
+		width: 61%;
+	}
+	
+	.sponsors-uncut {
+		width: 100%;
+	}
+	
+	.main-content-container {
+		background: linear-gradient(270deg, #0D3257 0%, #041424 100%);
+		grid-row-start: 4;
+		grid-row-end: 5;
+	}
+	
+	.main-content-container::after {
+		
+		content: '';
+		position: absolute;
+		height: 590px;
+		width: 100%;
+		top: 1213px;
+		background: url('../pictures/baggrundemoenster.svg');
+		background-position: center;
+		background-size: 140%;
+		opacity: 0.13;
+		mix-blend-mode: overlay;
+		z-index: 0;
+	}
+	
+	.main-content-container::before {
+		
+		content: '';
+		background: transparent linear-gradient(0deg, #092541 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+		z-index: 2;
+		position: absolute;
+		top: 1586px;
+		height: 203px;
+		width: 100%;
+		mix-blend-mode: multiply;
+	}
+	
+	.main-content {
+		display: grid;
+		grid-template-columns: 1fr 426px 1155px 339px 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		height: 100%;
+		
+		
+		overflow: hidden;
+	}
+	
+	.manchet {
+		color: #009cdc;
+		font-size: 26px;
+		line-height: 1.3;
+		font-family: 'Zilla Slab', serif;
+		z-index: 2;
+		transform: translate(-70px, -45px);
+		
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+	
+	.main-text-div {
+		z-index: 2;
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 4;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin-top: 150px;
+		width: 85%;
+	}
+	
+	.main-text-div p {
+		color: #fff;
+		line-height: 24px;
+		margin-bottom: 25px;
+		font-size: 18px;
+	}
+	
+	.main-content h2 {
+		z-index: 2;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		color: #fff;
+		font-size: 50px;
+		font-weight: 800;
+		font-style: italic;
+		position: relative;
+		left: -70px;
+		bottom: -45%;
+		display: inline-block;
+	}
+	
+	.kontakt-btn-container {
+		z-index: 2;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 3;
+		grid-row-end: 4;
+		transform: translate(-70px, 20px);
+		
+	}
+	
+	.kontakt-btn {
+		display: inline-block;
+		padding: 14px 30px;
+		transform: skewX(-7deg);
+		background: linear-gradient(#ef493c, #db001e);
+		
+		color: #fff;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	
+	.kontakt-btn:hover {
+		background: linear-gradient(#ef493c, #aa0000);
+	}
+	
+	.streger-main {
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 4;
+		z-index: 1;
+		transform: translateY(-220px);
+	}
+	
+	#aside-container {
+		z-index: 2;
+		grid-row-start: 5;
+		grid-row-end: 6;
+		display: flex;
+		align-items: center;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		white-space: no-wrap;
+		scroll-behavior: smooth;
+		width: 100%;
+		height: 100%;
+		background: #dfe4e8;
+	}
+	
+	.aside-buttons {
+		display: flex;
+		position: absolute;
+		right: 27%;
+		top: 2214px;
+	}
+	
+	#aside-btn-back:hover,
+	#aside-btn-next:hover {
+		cursor: pointer;
+	
+	}
+	
+	#aside-btn-back:hover::after,
+	#aside-btn-next:hover::after {
+		box-shadow: inset 0px 0px 10px 50px rgba(0,0,0,0.10);
+		content: '';
+		display: block;
+		transform: skewX(-9deg) translateX(4px);
+		width: 71px;
+		height: 58px;
+		position: absolute;
+		bottom: 3px;
+	}
+	
+	#aside-btn-back:active::after,
+	#aside-btn-next:active::after {
+		background: linear-gradient(#005dac, #23b5ee);
+		content: '';
+		display: block;
+		transform: skewX(-9deg) translateX(4px);
+		width: 71px;
+		height: 58px;
+		position: absolute;
+		bottom: 3px;
+	}
+	
+	#aside-btn-next::before {
+		display: block;
+		content: '';
+		
+		background: url('../pictures/arrow-white.svg');
+		background-size: 100%;
+		
+		position: absolute;
+		transform: translate(33px, 17px);
+		
+		height: 24px;
+		width: 14px;
+		z-index: 4;
+	}
+	
+	#aside-btn-back::before {
+		display: block;
+		content: '';
+		
+		background: url('../pictures/arrow-white.svg');
+		background-size: 100%;
+		
+		position: absolute;
+		transform: translate(33px, 17px) rotate(180deg);
+		
+		height: 24px;
+		width: 14px;
+		z-index: 4;
+		
+	}
+	
+	.article-link-container {
+		display:flex; 
+		margin-right: 20px;
+	}
+	
+	.article-one {
+		margin-left: 200px;
+	}
+	
+	.article-image {
+		width: 256px;
+		height: 250px;
+	}
+	
+	.article-link-text-container {
+		width: 368px;
+		height: 250px;
+		padding: 30px 60px 0 30px;
+		background: #fff;
+	}
+	
+	.article-link-text-container h1 {
+		font-size: 32px;
+		color: #092541;
+		font-style: italic;
+		font-weight: 800;
+	}
+	
+	.article-btn {
+		display: inline-block;
+		padding: 14px 30px;
+		background: linear-gradient(#ef493c, #db001e);
+		transform: skewX(-7deg);
+		position: relative;
+		top: 80px;
+		left: 63%;
+		
+		color: #fff;
+		font-weight: 500;
+		font-style: italic;
+	}
+	
+	.article-btn:hover {
+		background: linear-gradient(#ef493c, #aa0000);
+	}
+	
+	.teamet-container {
+		background: linear-gradient(270deg, #0D3257 0%, #041424 100%);
+		z-index: 0;
+		display: flex;
+		justify-content: center;
+		grid-row-start: 6;
+		grid-row-end: 7;
+		
+	}
+	
+	.teamet-container::after {
+		height: 1026px;
+		top: 2270px;
+		width: 100%;
+		left: 0;
+		content: '';
+		position: absolute;
+		
+		background: url('../pictures/baggrundemoenster.svg');
+		background-position: center;
+		background-size: 140%;
+		opacity: 0.13;
+		mix-blend-mode: overlay;
+		z-index: -1;
+	}
+	
+	.teamet-container::before {
+		content: '';
+		position: absolute;
+		top: 3087px;
+		width: 100%;
+		height: 200px;
+		left: 0;
+		background: transparent linear-gradient(0deg, #092541 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+		mix-blend-mode: multiply;
+		z-index: 1;
+	}
+	
+	.teamet-rasmus {
+		max-width: 496px;
+		width: 26%;
+		max-height: 90%;
+		height: auto;
+		font-size: 18px;
+		color: #fff;
+		line-height: 24px;
+		
+		margin-top: 122px;
+		z-index: 3;
+	}
+	
+	.teamet-rasmus h2 {
+		position: relative;
+		top: -30px;
+		left: 0;
+		color: #fff;
+		z-index: 3;
+		
+		font-style: italic;
+		font-weight: 800;
+		font-size: 50px;
+		line-height: 0;
+		display: inline;
+		
+	}
+	
+	.teamet-tage {
+		max-width: 496px;
+		width: 26%;
+		font-size: 18px;
+		color: #fff;
+		line-height: 24px;
+		
+		margin-top: 144px;
+		
+		margin-left: 7.5%;
+		z-index: 1;
+	}
+	
+	.teamet-rasmus p,
+	.teamet-tage p {
+		margin-bottom: 25px;
+		
+		z-index: 3;
+	}
+	
+	.rasmus-list {
+		list-style: none;
+		font-family: 'montserrat', serif;
+		margin-bottom: 25px;
+		
+		z-index: 3;
+	}
+	
+	.rasmus-name-tag {
+		background: linear-gradient(#005dac, #23b5ee);
+		padding: 23px 39px 23px 32px;
+		transform: skewX(-7deg);
+		display: inline-block;
+		
+		font-family: 'montserrat', serif;
+		font-size: 22px;
+		font-style: italic;
+		font-weight: 600;
+		position: relative;
+		top: -42px;
+		left: -32px;
+	}
+	
+	.send-email {
+		font-size: 16px;
+		font-weight: 500;
+		font-style: italic;
+		
+		background: linear-gradient(#ef493c, #db001e);
+		padding: 14px 30px;
+		transform: skewx(-7deg);
+		display: inline-block;
+	}
+	
+	.send-email:hover {
+		background: linear-gradient(#ef493c, #aa0000);
+	}
+	
+	.rasmus-list li::before {
+		content: "•"; /* Insert content that looks like bullets */
+		padding-right: 5px;
+		color: white; /* Or a color you prefer */
+	}
+	
+	.tage-list {
+		font-style: italic;
+		font-size: 22px;
+		font-family: 'Zilla Slab', serif;
+		color: #009cdc;
+		list-style: none;
+		margin-bottom: 25px;
+	}
+	
+	.tage-image,
+	.rasmus-image {
+		width: 100%;
+	}
+	
+	.streger-teamet {
+		z-index: 0;
+		position: relative;
+		left: -190px;
+	}
+	
+	.sponsors-container-second {
+		margin: auto;
+		width: 57%;
+		grid-row-start: 7;
+		grid-row-end: 8;
+	}
+	
+	.sponsors-second {
+		display: flex;
+		justify-content: space-around;
+		opacity: 0.35;
+	}
+	
+	.car-details-container {
+		grid-row-start: 8;
+		grid-row-end: 9;
+		display: grid;
+		grid-template-columns: 1fr 960px 960px 1fr;
+		grid-template-rows: 1fr 1fr;
+		
+		overflow-x: hidden;
+		
+		z-index: 1;
+		background: url(../pictures/background@2x.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center 55%;
+		mix-blend-mode: overlay;
+	}
+	
+	.car-details-container::before {
+		content: '';
+		display: block;
+		z-index: 3;
+		
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		
+		position: relative;
+		top: calc(100% - 200px);
+		height: 200px;
+		background: transparent linear-gradient(0deg, #061231ab 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+		
+		mix-blend-mode: multiply;
+	}
+	
+	.car-details-container::after {
+		content: '';
+		display: block;
+		
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		
+		width: 100%;
+		height: 100%;
+		position: relative;
+		
+		
+		background: transparent linear-gradient(180deg, #0D3257 0%, #092541 100%) 0% 0% no-repeat padding-box;
+		z-index: 1;
+		mix-blend-mode: multiply;
+		opacity: 0.6;
+	}
+	
+	.om-bilen-container {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		
+		max-width: 500px;
+		
+		margin-top: 65px;
+		
+		z-index: 4;
+	}
+	
+	.car-details-list {
+		display: flex;
+	}
+	
+	.om-bilen {
+		color: #009CDC;
+		font-size: 22px;
+		font-weight: 700;
+		font-style: italic;
+		line-height: 26px;
+	}
+	
+	.om-bilen-container h2 {
+		font-size: 50px;
+		font-weight: 800;
+		font-style: italic;
+		margin-bottom: 22px;
+		color: #fff;
+	}
+	
+	.car-details-text {
+		line-height: 26px;
+		margin-bottom: 20px;
+		color: #fff;
+	}
+	
+	.car-details-list ul {
+		list-style: none;
+		font-style: italic;
+		line-height: 34px;
+		font-size: 22px;
+		color: #fff;
+	}
+	
+	.car-details-list-one {
+		margin-right: 50px;
+		font-family: 'montserrat', serif;
+		
+		font-weight: 700;
+		opacity: 0.44;
+	}
+	
+	.car-details-list-two li::after {
+		content: '';
+		position: absolute;
+		display: block;
+		height: 1px;
+		width: 400px;
+		background: #fff;
+		transform: translateX(-141px);
+		opacity: 1;
+	}
+	
+	.car-details-list-two {
+		font-family: 'Zilla Slab', serif;
+		
+	}
+	
+	
+	.car-details-streger {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		
+		z-index: 2;
+		
+		position: relative;
+		left: 66%;
+		top: -2px;
+	}
+	
+	.car-image-gallery {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		
+		
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		top: calc(100% - 170px);
+		height: 170px;
+		width: 950px;
+		
+	}
+	
+	#car-gallery-images {
+		display: flex;
+		width: 75%;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		white-space: nowrap;
+		z-index: 3;
+		scroll-behavior: smooth;
+	}
+	
+	#red-stripe {
+		position: absolute;
+		z-index: 5;
+		opacity: 1;
+		bottom: 0;
+		left: 0;
+		width: 213px;
+		
+	}
+	
+	#car-gallery-images img {
+		width: auto;
+		height: 170px;
+		z-index: 2;
+		opacity: 0.6;
+		
+	}
+	
+	.next-image-btn {
+		transform: skewX(-9deg);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 22.35%;
+		height: 170px;
+		z-index: 4;
+		background: transparent linear-gradient(180deg, #0D3257 0%, #041424 100%) 0% 0% no-repeat padding-box;
+		cursor: pointer;
+		border: none;
+	}
+	
+	.next-image-btn:hover {
+		box-shadow: inset 0px 0px 0px 100px #00000019;
+	}
+	
+	.next-image-btn:active {
+		background: transparent linear-gradient(180deg, #041424 0%, #0D3257 100%) 0% 0% no-repeat padding-box;
+	}
+	
+	.next-image-btn img {
+		width: 14px;
+		height: 24px;
+	}
+	
+	.top-logo-background {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		width: 100%;
+		height: 100%;
+		
+		opacity: 0.4;
+		mix-blend-mode: color-dodge;
+		
+		filter: saturate(0%);
+		
+		position: relative;
+		
+		
+		
+	}
+	
+	.footer {
+		grid-row-start: 9;
+		grid-row-end: 10;
+		display: grid; 
+		grid-template-columns: 1fr 274px 548px 274px 823px 1fr;
+		height: 254px;
+		overflow-y: hidden;
+		
+		background: transparent linear-gradient(180deg, #0D3257 0%, #092541 100%) 0% 0% no-repeat padding-box;
+		z-index: 1;
+	}
+	
+	.footer::after {
+		content: '';
+		display: block;
+		
+		grid-column-start: 1;
+		grid-column-end: 7;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		
+		width: 100%;
+		height: 254px;
+		position: absolute;
+		
+		
+		background: url('../pictures/baggrundemoenster.svg');
+		background-position: center;
+		background-size: 140%;
+		z-index: 1;
+		mix-blend-mode: overlay;
+		opacity: 0.13;
+	}
+	
+	.footer::before {
+		content: '';
+		display: block;
+		z-index: 3;
+		
+		grid-column-start: 1;
+		grid-column-end: 7;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		
+		position: relative;
+		top: 54px;
+		height: 200px;
+		background: transparent linear-gradient(0deg, #092541 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+		
+		mix-blend-mode: multiply;
+	}
+	
+	.streger-footer {
+		position: relative;
+		right: 50%;
+		top: -2px;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		z-index: 2;
+	}
+	
+	
+	
+	.kontakt-footer {
+		text-align: left;
+		margin: 110px auto;
+		font-size: 26px;
+		font-family: 'Zilla Slab', serif;
+		font-weight: 500;
+		line-height: 26px;
+		font-style: italic;
+		
+		color: #fff;
+		
+		z-index: 4;
+		
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	
+	.kontakt-footer a {
+		font-size: 22px;
+		color: #009cdc;
+		font-style: italic;
+		font-family: 'Zilla Slab', serif;
+	}
+	
+	.dmf-logo-footer {
+		margin: 85px auto;
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		
+		z-index: 4;
+	}
+	
+	.text-footer {
+		max-width: 494px;
+		margin-top: 85px;
+		margin: 85px auto auto auto;
+		line-height: 24px;
+		font-size: 18px;
+		
+		color: #fff;
+		
+		z-index: 4;
+		
+		grid-column-start: 5;
+		grid-column-end: 6;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+}
